@@ -1,0 +1,9 @@
+C:\Users\joker\source\repos\VestOchka\VestOchka\bin\Debug\VestOchka.exe.config
+C:\Users\joker\source\repos\VestOchka\VestOchka\bin\Debug\VestOchka.exe
+C:\Users\joker\source\repos\VestOchka\VestOchka\bin\Debug\VestOchka.pdb
+C:\Users\joker\source\repos\VestOchka\VestOchka\obj\Debug\VestOchka.csprojAssemblyReference.cache
+C:\Users\joker\source\repos\VestOchka\VestOchka\obj\Debug\VestOchka.Form1.resources
+C:\Users\joker\source\repos\VestOchka\VestOchka\obj\Debug\VestOchka.Properties.Resources.resources
+C:\Users\joker\source\repos\VestOchka\VestOchka\obj\Debug\VestOchka.csproj.GenerateResource.cache
+C:\Users\joker\source\repos\VestOchka\VestOchka\obj\Debug\VestOchka.exe
+C:\Users\joker\source\repos\VestOchka\VestOchka\obj\Debug\VestOchka.pdb
