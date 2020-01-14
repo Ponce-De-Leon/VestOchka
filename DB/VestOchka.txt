@@ -1,0 +1,79 @@
+CREATE TABLE "User" (
+	"ID" serial NOT NULL,
+	"ID_Position" bigint NOT NULL,
+	"DateCreate" DATE NOT NULL,
+	"LastName" character varying NOT NULL,
+	"FirstName" character varying NOT NULL,
+	"SecondName" character varying NOT NULL,
+	"DOB" character varying NOT NULL,
+	"Email" character varying NOT NULL,
+	"PhoneNumber" character varying NOT NULL,
+	CONSTRAINT "User_pk" PRIMARY KEY ("ID")
+) WITH (
+  OIDS=FALSE
+);
+
+
+
+CREATE TABLE "Position" (
+	"ID" serial NOT NULL,
+	"Name" character varying NOT NULL,
+	CONSTRAINT "Position_pk" PRIMARY KEY ("ID")
+) WITH (
+  OIDS=FALSE
+);
+
+
+
+CREATE TABLE "Request" (
+	"ID" serial NOT NULL,
+	"DateCreate" TIMESTAMP NOT NULL,
+	"Number" serial NOT NULL,
+	"Theme" character varying NOT NULL,
+	"Attachment" BOOLEAN NOT NULL,
+	"Discription" character varying NOT NULL,
+	CONSTRAINT "Request_pk" PRIMARY KEY ("ID")
+) WITH (
+  OIDS=FALSE
+);
+
+
+
+CREATE TABLE "Status" (
+	"ID" serial NOT NULL,
+	"Name" character varying NOT NULL,
+	CONSTRAINT "Status_pk" PRIMARY KEY ("ID")
+) WITH (
+  OIDS=FALSE
+);
+
+
+
+CREATE TABLE "AddStatus" (
+	"ID" serial NOT NULL,
+	"ID_Request" bigint NOT NULL,
+	"ID_User" bigint NOT NULL,
+	"ID_Status" bigint NOT NULL,
+	CONSTRAINT "AddStatus_pk" PRIMARY KEY ("ID")
+) WITH (
+  OIDS=FALSE
+);
+
+
+
+CREATE TABLE "DataReg" (
+	"ID" bigint NOT NULL,
+	"DateUpd" DATE NOT NULL,
+	"Login" character varying NOT NULL,
+	"HashPass" character varying NOT NULL
+) WITH (
+  OIDS=FALSE
+);
+
+
+
+ALTER TABLE "User" ADD CONSTRAINT "User_fk0" FOREIGN KEY ("ID_Position") REFERENCES "Position"("ID");
+ALTER TABLE "AddStatus" ADD CONSTRAINT "AddStatus_fk0" FOREIGN KEY ("ID_Request") REFERENCES "Request"("ID");
+ALTER TABLE "AddStatus" ADD CONSTRAINT "AddStatus_fk1" FOREIGN KEY ("ID_User") REFERENCES "User"("ID");
+ALTER TABLE "AddStatus" ADD CONSTRAINT "AddStatus_fk2" FOREIGN KEY ("ID_Status") REFERENCES "Status"("ID");
+ALTER TABLE "DataReg" ADD CONSTRAINT "DataReg_fk0" FOREIGN KEY ("ID") REFERENCES "User"("ID");
