@@ -29,7 +29,6 @@ CREATE TABLE "Request" (
 	"ID" serial NOT NULL,
 	"DateCreate" TIMESTAMP NOT NULL,
 	"Theme" character varying NOT NULL,
-	"Attachment" BOOLEAN NOT NULL,
 	"Discription" character varying NOT NULL,
 	CONSTRAINT "Request_pk" PRIMARY KEY ("ID")
 ) WITH (
@@ -110,6 +109,7 @@ CREATE TABLE "Messeges" (
 	"ID_Request" bigint NOT NULL,
 	"text" character varying NOT NULL,
 	"ID_User" bigint NOT NULL,
+	"Attachment" BOOLEAN NOT NULL,
 	CONSTRAINT "Messeges_pk" PRIMARY KEY ("ID")
 ) WITH (
   OIDS=FALSE
