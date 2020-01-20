@@ -1,0 +1,9 @@
+C:\Users\thedr\Desktop\Works\VestOchka\VestOchkaServer\VestOchkaServer\bin\Debug\VestOchkaServer.exe.config
+C:\Users\thedr\Desktop\Works\VestOchka\VestOchkaServer\VestOchkaServer\bin\Debug\VestOchkaServer.exe
+C:\Users\thedr\Desktop\Works\VestOchka\VestOchkaServer\VestOchkaServer\bin\Debug\VestOchkaServer.pdb
+C:\Users\thedr\Desktop\Works\VestOchka\VestOchkaServer\VestOchkaServer\obj\Debug\VestOchkaServer.csprojAssemblyReference.cache
+C:\Users\thedr\Desktop\Works\VestOchka\VestOchkaServer\VestOchkaServer\obj\Debug\VestOchkaServer.Main_F.resources
+C:\Users\thedr\Desktop\Works\VestOchka\VestOchkaServer\VestOchkaServer\obj\Debug\VestOchkaServer.Properties.Resources.resources
+C:\Users\thedr\Desktop\Works\VestOchka\VestOchkaServer\VestOchkaServer\obj\Debug\VestOchkaServer.csproj.GenerateResource.cache
+C:\Users\thedr\Desktop\Works\VestOchka\VestOchkaServer\VestOchkaServer\obj\Debug\VestOchkaServer.exe
+C:\Users\thedr\Desktop\Works\VestOchka\VestOchkaServer\VestOchkaServer\obj\Debug\VestOchkaServer.pdb
